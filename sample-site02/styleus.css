@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/* navbar */
+
+.navbar{
+    background: #0082e6;
+    height: 10hv;
+    width: 100%;
+    border: none;
+    padding: 0%;
+}
+
+.navbar nav label a{
+    color: #fff;
+    font-size: 35px;
+    line-height: 10vh;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.navbar nav ul{
+    float: right;
+    margin-right: 30px;
+}
+.navbar nav ul li{
+    display: inline-block;
+    line-height: 10vh;
+    padding: 0 15px;
+    position: relative;
+}
+.navbar nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 7px 13px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+}
+
+.navbar nav ul li a.active,
+
+.navbar nav ul li a:hover{
+    color: #000;
+    background: #fff;
+}
+
+section .about{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #545454 ;
+}
+section .about .aboutus{
+    background: url(https://keltevetech.com/wp-content/uploads/2020/02/smartphone-desk-laptop-iphone-notebook.jpg) no-repeat left;
+    background-size: 65%;
+    overflow: hidden;
+    padding: 100px ;
+}
+section .about .aboutus .innercont{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    padding: 100px;
+}
+section .about .aboutus .innercont h1{
+    margin-bottom: 30px;
+    border-bottom: 4px solid #0082e6;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+}
+section .about .aboutus .innercont p{
+    font-size: 16px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+section .about .aboutus .innercont a{
+    padding: 7px 13px;
+    border: 2px solid #0082e6;
+    background: transparent;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+}
+section .about .aboutus .innercont a:hover{
+    background:#0082e6;
+    color: #fff;
+}
+@media (max-width: 850px){
+    section .about .aboutus{
+        background-size: 100%;
+        padding: 0px;
+    }
+    section .about .aboutus .innercont{
+        width: 75%;
+        background-color: #fdfdfd;
+        padding: 75px;
+    }
+}

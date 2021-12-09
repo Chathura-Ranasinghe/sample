@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar{
+    background: #0082e6;
+    height: 10vh;
+    width: 100%;
+    border: none;
+}
+.navbar nav label a{
+    color: white;
+    font-size: 35px;
+    line-height: 10vh;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.navbar nav ul{
+    float: right;
+    margin-right: 30px;
+}
+.navbar nav ul li{
+    display: inline-block;
+    line-height: 10vh;
+    padding: 0 15px;
+    position: relative;
+}
+.navbar nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 7px 13px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: all 0.3s linear;
+}
+
+.navbar nav ul li a.active,
+
+.navbar nav ul li a:hover{
+    color: #000;
+    background: #fff;
+}
+/* background */
+
+section{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+section .imgbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgbx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg,#e91e63,#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+section .contentbox .formbox{
+    width: 50%;
+}
+section .contentbox .formbox h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #03a9f4;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbox .formbox .inputbox{
+    margin-bottom: 20px;
+}
+section .contentbox .formbox .inputbox span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+section .contentbox .formbox .inputbox input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentbox .formbox .inputbox input[type="submit"]{
+    background: #0082e6;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+section .contentbox .formbox .inputbox input[type="submit"]:hover{
+    background: #1b9bff;
+}
+section .contentbox .formbox .remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .contentbox .formbox .remember .psw{
+    float: right;
+}
+section .contentbox .formbox .remember .psw a{
+    color: #0082e6;
+    font-weight: 500;
+}
+
+section .contentbox .formbox .inputbox p{
+    color: #607d8b;
+}
+section .contentbox .formbox .inputbox p a{
+    color: #0082e6;
+}
+@media (max-width: 850px){
+    section .imgbx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentbox .formbox{
+        width: 100%;
+        padding: 40px;
+        background: rgb(255 255 255 / 0.9);
+        margin: 50px;
+        border-radius: 5px;
+    }   
+}
