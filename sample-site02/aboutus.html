@@ -31,10 +31,53 @@
                         including algorithm formulation, software and hardware development, 
                         and artificial intelligence.
                     </p>
-                    <a href="">Read More</a>
+                    <a href="#team">Our Team</a>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="our-team">
+            <h1 id="team">Meet Our Team</h1>
+            <div class="img-cont">
+                <div class="image" onclick="fetch_info(0)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(1)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(2)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(3)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(4)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(5)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+            </div>
+            <div class="info-cont">
+                <img id="profile" src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png">
+                <div class="info">
+                    <h1 id="name">Dilshan</h1>
+                    <h3 id="status">Back-end Dev</h3>
+                    <p id="about">I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function fetch_info(i){
+            let profile=
+            ["https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"];
+            let name = ["Dilshan","Sacheera","Thilina","Chathura","Ranjula","Naveen"];
+            let status = ["Back-end Dev","Back-end Dev","Back-end Dev","Front-end Dev","Back-end Dev","Back-end Dev"];
+            document.getElementById("profile").src=profile[i];
+            document.getElementById("name").innerHTML=name[i];
+            document.getElementById("status").innerHTML=status[i];
+            document.getElementById("about").innerHTML="I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years";
+        }
+    </script>
 </body>
 </html>
