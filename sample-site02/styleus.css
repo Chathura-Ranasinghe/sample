@@ -10,7 +10,6 @@
 /* navbar */
 
 .navbar{
-    overflow: hidden;
     background: #0082e6;
     height: 10hv;
     width: 100%;
@@ -52,7 +51,6 @@
 }
 
 section .about{
-    overflow: hidden;
     min-height: 90vh;
     width: 100%;
     display: flex;
@@ -101,7 +99,6 @@ section .about .aboutus .innercont a:hover{
  /* out team */
 
  section .our-team{
-    overflow: hidden;
     background: #0082e6;
     min-height: 100vh;
     width: 100%;
