@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styleus.css">
 </head>
@@ -43,7 +44,7 @@
                 <div class="image" onclick="fetch_info(0)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
                 <div class="image" onclick="fetch_info(1)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
                 <div class="image" onclick="fetch_info(2)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
-                <div class="image" onclick="fetch_info(3)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
+                <div class="image" onclick="fetch_info(3)"><img src="https://scontent.fcmb1-2.fna.fbcdn.net/v/t1.6435-9/121083471_1264454520587891_5151123305955116986_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFSsxGvQ_3Kec7187dB_SQjWlTprp-J6LVaVOmun4notaTjdltFQNSwFOiCsOpuEWCEDyviuO5yPE_ICtKQT3GK&_nc_ohc=JtWYEYJLqxAAX_wKxZu&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT_nCXnQ5hRmOQGpCjrkgoaUlA_kR50nCchsnJmOIfZVTQ&oe=61E19604"></div>
                 <div class="image" onclick="fetch_info(4)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
                 <div class="image" onclick="fetch_info(5)"><img src="https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"></div>
             </div>
@@ -53,6 +54,11 @@
                     <h1 id="name">Dilshan</h1>
                     <h3 id="status">Back-end Dev</h3>
                     <p id="about">I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years.</p>
+                    <ul>     
+                        <li><a href=""  id="fb" target="_blank" class="fa fa-facebook"></a></li>
+                        <li><a href="" id="linked" target="_blank" class="fa fa-linkedin"></a></li>
+                        <li><a href="" id="insta" target="_blank" class="fa fa-instagram"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -63,20 +69,47 @@
             ["https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
             "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
             "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
-            "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
+            "https://scontent.fcmb1-2.fna.fbcdn.net/v/t1.6435-9/121083471_1264454520587891_5151123305955116986_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFSsxGvQ_3Kec7187dB_SQjWlTprp-J6LVaVOmun4notaTjdltFQNSwFOiCsOpuEWCEDyviuO5yPE_ICtKQT3GK&_nc_ohc=JtWYEYJLqxAAX_wKxZu&_nc_ht=scontent.fcmb1-2.fna&oh=00_AT_nCXnQ5hRmOQGpCjrkgoaUlA_kR50nCchsnJmOIfZVTQ&oe=61E19604",
             "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png",
             "https://www.seekpng.com/png/detail/966-9665493_my-profile-icon-blank-profile-image-circle.png"];
             let name = ["Dilshan","Sacheera","Thilina","Chathura","Ranjula","Naveen"];
             let status = ["Back-end Dev","Back-end Dev","Back-end Dev","Front-end Dev","Back-end Dev","Back-end Dev"];
+            let about = [
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
+            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years"];
+            let fb = [
+                "",
+                "",
+                "",
+                "https://www.facebook.com/chathura.ranasinghe.mipa/",
+                "",
+                ""];
+            let linked = [
+                "",
+                "",
+                "",
+                "https://www.linkedin.com/in/chathura-ranasinghe-925952222",
+                "",
+                ""];
+            let insta = [
+                "",
+                "",
+                "",
+                "https://www.instagram.com/__chathura._.ranasinghe__/",
+                "",
+                ""];
             document.getElementById("profile").src=profile[i];
             document.getElementById("name").innerHTML=name[i];
             document.getElementById("status").innerHTML=status[i];
-            document.getElementById("about").innerHTML="I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
-            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
-            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
-            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
-            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years",
-            "I am a first-year undergraduate student at Eastern University Sri Lanka. I am a programmer, specializing in problem-solving and web development. I have been developing games using C++and Java programming languages. Also, I works as a Fiverr graphic designer for the last two years";
+            document.getElementById("about").innerHTML= about[i];
+            document.getElementById("fb").href = fb[i];
+            document.getElementById("linked").href = linked[i];
+            document.getElementById("insta").href = insta[i];
+
         }
     </script>
 </body>
